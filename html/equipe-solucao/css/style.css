@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fundo {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    opacity: 1;
+    font-size: 6rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    border: 30px solid #cfcbba;
+}
+
+nav {
+    background-color: #cfcbba;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.menu-lista {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 90px;
+    width: 90%;
+}
+
+.menu-lista a {
+    text-decoration: none;
+    color: #003760;
+    font-size: 1.3rem;
+}
+
+.menu-lista a:hover {
+    text-decoration: underline;
+}
+
+.login-botao {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-botao button {
+    border: none;
+    background-color: #003760;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.login-botao a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.iconeMenuCelular {
+    display: none;
+}
+
+.menuCelular {
+    display: none;
+}
+
+@media screen and (max-width: 1250px) {
+
+    .menu-lista, .login-botao {
+        display: none;
+    }
+
+    .iconeMenuCelular {
+        display: block;
+    }
+
+    .iconeMenuCelular button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menuCelular {
+        background-color: #cfcbba;
+    }
+
+    .menuCelular .menu-lista {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        width: 100%;
+    }
+
+    .menuCelular li {
+        display: block;
+        margin: 0px auto 1rem auto;
+    }
+
+    .menuCelular .login-botao {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .menuCelular .login-botao button {
+        margin-bottom: 1rem;
+    }
+
+    .aberto {
+        display: block;
+    }
+}
