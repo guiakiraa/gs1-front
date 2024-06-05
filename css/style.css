@@ -53,7 +53,7 @@ nav {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 90px;
+    gap: 60px;
     width: 90%;
 }
 
@@ -93,6 +93,31 @@ nav {
 
 .menuCelular {
     display: none;
+}
+
+footer {
+    background-color: #d9d9d9;
+    padding-bottom: 70px ;
+}
+
+footer h2 {
+    font-size: 1.7rem;
+    color: #003760;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.parceiros {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.primeiros, .segundos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 @media screen and (max-width: 1250px) {
@@ -139,5 +164,24 @@ nav {
 
     .aberto {
         display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    footer h2 {
+        font-size: 1.2rem;
+    }
+
+    .primeiros img, .segundos img {
+        width: 80px;
+    }
+
+    #aws {
+        width: 40px;
     }
 }
