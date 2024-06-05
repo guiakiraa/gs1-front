@@ -39,6 +39,7 @@ main {
     width: 100%;
     min-height: 100vh;
     border: 30px solid #d9d9d9;
+    background-color: #003760;
 }
 
 nav {
@@ -119,6 +120,35 @@ footer h2 {
     align-items: center;
     justify-content: space-evenly;
 }
+
+h1{
+    color: #d9d9d9;
+    text-align: left;
+    margin: 20px;
+    font-size: 2em;
+}
+
+p{
+    color: #d9d9d9;
+    text-align: left;
+    margin: 20px;
+}
+
+.linha{
+    border: none;
+    height: 1px;
+    background: #fff;
+    margin: 20px;
+}
+
+h2{
+    color: #d9d9d9;
+    text-align: left;
+    margin: 20px;
+    font-size: 2rem; 
+}
+
+
 
 @media screen and (max-width: 1250px) {
 
