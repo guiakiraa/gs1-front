@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="fundo">
-            <h1>Login</
+            <h1>Login</h1>
         </div>
     </header>
     <main>
@@ -43,6 +43,60 @@
 
             <div class="login-botao">
                 <button><a href="../login/login.html">Login</a></button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="entrar">
+                <form action="">
+                    <h2>Login</h2>
+                    <fieldset>
+                        <label for="emailId">E-mail</label>
+                        <input type="email" name="email" id="emailId" placeholder="E-mail" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="senhaId">Senha</label>
+                        <input type="password" name="senha" id="senhaId" placeholder="Senha" required>
+                    </fieldset>
+                    <input id="botao" type="submit" value="Entrar">
+                </form>
+                <div class="separa">
+                    <hr class="linha">
+                    <span>Ou</span>
+                    <hr class="linha">
+                </div>
+                <button>
+                    <p>Entrar com o Google</p>
+                </button>
+            </div>
+            <div class="cadastrar">
+                <form action="">
+                    <div class="subtitulo">
+                        <h2>Novo(a) por aqui?</h2>
+                        <p>Faça Parte!</p>
+                    </div>
+                    <fieldset>
+                        <label for="nomeId">Nome</label>
+                        <input type="text" name="nome" id="nomeId" placeholder="Nome completo">
+                    </fieldset>
+                    <fieldset>
+                        <label for="telefoneId">Telefone</label>
+                        <input type="tel" name="telefone" id="telefoneId" placeholder="Telefone com DDD">
+                    </fieldset>
+                    <fieldset>
+                        <label for="cpfId">CPF</label>
+                        <input type="text" name="cpf" id="cpfId" placeholder="CPF - Apenas Números">
+                    </fieldset>
+                    <fieldset>
+                        <label for="emailId">Email</label>
+                        <input type="email" name="email" id="emailId">
+                    </fieldset>
+                    <fieldset>
+                        <label for="senhaId">Senha</label>
+                        <input type="text" name="senha" id="senhaId" placeholder="Senha">
+                    </fieldset>
+                    <input type="submit" value="Pronto">
+                </form>
             </div>
         </div>
     </main>
