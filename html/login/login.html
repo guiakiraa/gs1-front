@@ -48,54 +48,58 @@
 
         <div class="container">
             <div class="entrar">
-                <form action="">
+                <form id="logar" action="">
                     <h2>Login</h2>
                     <fieldset>
                         <label for="emailId">E-mail</label>
-                        <input type="email" name="email" id="emailId" placeholder="E-mail" required>
+                        <input type="email" name="email" id="emailId" placeholder="Digite seu E-mail">
                     </fieldset>
                     <fieldset>
                         <label for="senhaId">Senha</label>
-                        <input type="password" name="senha" id="senhaId" placeholder="Senha" required>
+                        <input type="password" name="senha" id="senhaId" placeholder="Digite sua senha">
                     </fieldset>
-                    <input id="botao" type="submit" value="Entrar">
+                    <div class="divBotaoEntrar">
+                        <input id="botao" type="submit" value="Entrar">
+                    </div>
                 </form>
                 <div class="separa">
                     <hr class="linha">
                     <span>Ou</span>
                     <hr class="linha">
                 </div>
-                <button>
+                <button class="entraGoogle">
+                    <img id="google" src="../../img/iconGoogle.png" alt="">
                     <p>Entrar com o Google</p>
                 </button>
             </div>
+            <hr class="linhaVertical">
             <div class="cadastrar">
-                <form action="">
+                <form id="cadastro" action="">
                     <div class="subtitulo">
                         <h2>Novo(a) por aqui?</h2>
                         <p>Faça Parte!</p>
                     </div>
-                    <fieldset>
+                    <fieldset class="info">
                         <label for="nomeId">Nome</label>
-                        <input type="text" name="nome" id="nomeId" placeholder="Nome completo">
+                        <input type="text" name="nome" id="nomeId" placeholder="Digite seu nome completo">
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="info">
                         <label for="telefoneId">Telefone</label>
-                        <input type="tel" name="telefone" id="telefoneId" placeholder="Telefone com DDD">
+                        <input type="tel" name="telefone" id="telefoneId" placeholder="Digite seu telefone">
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="info">
                         <label for="cpfId">CPF</label>
-                        <input type="text" name="cpf" id="cpfId" placeholder="CPF - Apenas Números">
+                        <input type="text" name="cpf" id="cpfId" placeholder="Digite seu CPF">
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="info">
                         <label for="emailId">Email</label>
-                        <input type="email" name="email" id="emailId">
+                        <input type="email" name="email" id="emailId" placeholder="Informe seu E-mail">
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="info">
                         <label for="senhaId">Senha</label>
-                        <input type="text" name="senha" id="senhaId" placeholder="Senha">
+                        <input type="text" name="senha" id="senhaId" placeholder="Crie sua senha">
                     </fieldset>
-                    <input type="submit" value="Pronto">
+                    <input id="botaoPronto" type="submit" value="Pronto">
                 </form>
             </div>
         </div>
