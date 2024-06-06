@@ -95,6 +95,50 @@ nav {
     display: none;
 }
 
+.container {
+    min-height: 700px;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #495b29;
+}
+
+.empresa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 125px;
+}
+
+.metas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.textoMetas {
+    color: #495b29;
+    font-size: 1.5rem;
+}
+
+.participar {
+    background-color: #5C91A4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.2rem 0.4rem;
+}
+
 footer {
     background-color: #d9d9d9;
     padding-bottom: 70px ;
