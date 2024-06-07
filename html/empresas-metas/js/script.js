@@ -1,5 +1,7 @@
 let menu = document.querySelector('.iconeMenuCelular');
-let participar = document.querySelector('.participar')
+let botao1 = document.querySelector('#botao1')
+let botao2 = document.querySelector('#botao2')
+let botao3 = document.querySelector('#botao3')
 
 menu.addEventListener('click', ()=> {
     let menuCelular = document.querySelector('.menuCelular');
@@ -12,6 +14,14 @@ menu.addEventListener('click', ()=> {
     }
 })
 
-participar.addEventListener('click', ()=> {
-    participar.innerHTML = "Vôce está participando"
+botao1.addEventListener('click', ()=> {
+    botao1.innerHTML = "Você está participando"
+})
+
+botao2.addEventListener('click', ()=> {
+    botao2.innerHTML = "Você está participando"
+})
+
+botao3.addEventListener('click', ()=> {
+    botao3.innerHTML = "Você está participando"
 })
