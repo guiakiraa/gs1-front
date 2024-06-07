@@ -32,6 +32,7 @@ h1 {
     opacity: 1;
     font-size: 6rem;
     color: white;
+    text-transform: uppercase;
 }
 
 main {
@@ -53,7 +54,7 @@ nav {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 90px;
+    gap: 60px;
     width: 90%;
 }
 
@@ -96,13 +97,21 @@ nav {
 }
 
 .contato {
+    margin-bottom: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contatoTexto {
     display: flex;
     color: white;
     align-items: center;
-    margin-left: 5%;
+    gap: 10px;
 }
 
-.contato img {
+.contatoTexto img {
     width: 20px;
     margin: 20px;
 }
@@ -113,18 +122,94 @@ p{
     font-size: 1.25rem;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 2%;
+}
+
+.dados {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.espacoEscrever {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.espacoEscrever legend {
+    color: #fff;
+    font-size: 25px;
+    margin: auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 200px;
+}
+
+label {
+    color: #fff;
+    font-size: 20px;
+}
+
+.info {
+    height: 30px;
+}
+
+.envio {
+    background-color: #0e76a8;
+    color: white;
+    padding: 5px 20px; 
+    border: none;
+    margin: auto;
+    font-size: 20px;
+}
+
 .linha{
     border: none;
     height: 1px;
+    width: 800px;
     background: #fff;
-    margin: 20px;
+    margin: 70px auto;
 }
 
 main h2{
     color: #d9d9d9;
-    text-align: left;
-    margin: 20px 5%;
+    text-align: center;
     font-size: 2.5rem; 
+}
+
+.equipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.equipe h2 {
+    margin: 50px 5% 20px 5%;
+}
+
+.repositorio {
+    margin-bottom: 5%;
+    color: gray;
+    font-size: 1.1rem;
 }
 
 .container{
@@ -138,22 +223,26 @@ h3{
     margin-top: 20px;
 }
 
-a{
+.integrantes a{
     color: gray;
 }
 
-main img{
+.equipe a:hover {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.equipe img{
     width: 200px;
     border-radius: 5px;
 }
 
-.equipe{
+.equipeTria{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 100px;
     width: 100%;
-    padding-bottom: 10%;
 }
 
 .github{
@@ -220,7 +309,7 @@ footer h2 {
     }
 
     .menuCelular {
-        background-color: #cfcbba;
+        background-color: #d9d9d9;
     }
 
     .menuCelular .menu-lista {
@@ -251,27 +340,79 @@ footer h2 {
 }
 
 @media screen and (max-width: 900px) {
-    img{
+    .equipe     img{
         width: 150px;
     }
-    .equipe{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 50px;
-        width: 100%;
+    
+    .linha {
+        width: 400px;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 870px) {
+    .menu-lista a {
+        font-size: 1rem;
+    }
+    
+    .login-botao button {
+        padding: 5px;
+    }
+    
+    .login-botao a {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 790px) {
 
     h1 {
         font-size: 4rem;
     }
 
-    .equipe{
+    .linha {
+        width: 150px;
+    }
+
+    .equipeTria{
         flex-direction: column;
         align-items: center;
+        gap: 50px;
+    }
+
+    .dados {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contato h2 {
+        font-size: 1.5rem;
+    }
+
+    .contato p {
+        font-size: 0.9rem;
+    }
+
+    .info {
+        width: 150px;
+    }
+
+    label, input {
+        font-size: 0.8rem;
+    }
+
+    .espacoEscrever legend {
+        font-size: 1.5rem;
+    }
+
+    .espacoEscrever textarea {
+        width: 200px;
+        height: 100px;
+    }
+
+    .envio {
+        padding: 3px 25px; 
+        font-size: 15px;
     }
 
     footer h2 {

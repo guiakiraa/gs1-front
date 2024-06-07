@@ -196,7 +196,7 @@ footer h2 {
     }
 
     .menuCelular {
-        background-color: #cfcbba;
+        background-color: #d9d9d9;
     }
 
     .menuCelular .menu-lista {
@@ -246,6 +246,20 @@ footer h2 {
     
     .textoLocal {
         font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .menu-lista a {
+        font-size: 1rem;
+    }
+    
+    .login-botao button {
+        padding: 5px;
+    }
+    
+    .login-botao a {
+        font-size: 1rem;
     }
 }
 

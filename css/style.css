@@ -96,6 +96,27 @@ nav {
     display: none;
 }
 
+p{
+    color: #d9d9d9;
+    text-align: left;
+    margin: 20px;
+    font-size: 1.25rem;
+}
+
+.linha{
+    border: none;
+    height: 1px;
+    background: #fff;
+    margin: 20px;
+}
+
+main h2{
+    color: #d9d9d9;
+    text-align: left;
+    margin: 20px;
+    font-size: 2.5rem; 
+}
+
 footer {
     background-color: #d9d9d9;
     padding-bottom: 70px ;
@@ -121,28 +142,6 @@ footer h2 {
     justify-content: space-evenly;
 }
 
-p{
-    color: #d9d9d9;
-    text-align: left;
-    margin: 20px;
-    font-size: 1.25rem;
-}
-
-.linha{
-    border: none;
-    height: 1px;
-    background: #fff;
-    margin: 20px;
-}
-
-main h2{
-    color: #d9d9d9;
-    text-align: left;
-    margin: 20px;
-    font-size: 2.5rem; 
-}
-
-
 @media screen and (max-width: 1250px) {
 
     .menu-lista, .login-botao {
@@ -160,7 +159,7 @@ main h2{
     }
 
     .menuCelular {
-        background-color: #cfcbba;
+        background-color: #d9d9d9;
     }
 
     .menuCelular .menu-lista {
@@ -197,6 +196,20 @@ main h2{
 
     h2{
         font-size: 2.25rem;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .menu-lista a {
+        font-size: 1rem;
+    }
+    
+    .login-botao button {
+        padding: 5px;
+    }
+    
+    .login-botao a {
+        font-size: 1rem;
     }
 }
 

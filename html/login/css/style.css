@@ -102,7 +102,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 200px;
-    height: 90vh;
+    min-height: 90vh;
 }
 
 .entrar {
@@ -141,7 +141,6 @@ fieldset > input {
     border: none;
     border-radius: 5px;
     box-shadow: 1px 1px 6px #0000001c;
-    width: 290px;
     background-color: #D9D9D9;
     width: 250px;
 }
@@ -204,6 +203,10 @@ fieldset > input {
     height: 500px;
     background-color: white;
     margin: 50px 0px;
+}
+
+.cadastrar {
+    margin: 5% 0px;
 }
 
 #cadastro {
@@ -277,7 +280,7 @@ footer h2 {
     }
 
     .menuCelular {
-        background-color: #cfcbba;
+        background-color: #d9d9d9;
     }
 
     .menuCelular .menu-lista {
@@ -304,6 +307,108 @@ footer h2 {
 
     .aberto {
         display: block;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .container {
+        gap: 70px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+
+    .menu-lista a {
+        font-size: 1rem;
+    }
+    
+    .login-botao button {
+        padding: 5px;
+    }
+    
+    .login-botao a {
+        font-size: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .entrar {
+        margin-top: 5%;
+        height: 350px;
+        padding: 0px 20px;
+    }
+    
+    .entrar h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    fieldset > label {
+        color: #fff;
+        font-size: 0.7rem;
+    }
+    
+    fieldset > input {
+        font-size: 0.5rem;
+        width: 200px;
+    }
+    
+    #botao {
+        font-size: 0.6rem;
+    }
+    
+    .separa {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 7px;
+    }
+    
+    .separa span {
+        color: white;
+        font-size: 0.6rem;
+    }
+    
+    .linha {
+        height: 1px;
+        width: 80px;
+        background-color: white;
+    }
+    
+    #google {
+        width: 13px;
+    }
+    
+    .entraGoogle {
+        padding: 0.3rem;
+    }
+    
+    .entraGoogle p {
+        font-size: 0.7rem;
+        color: #2E6561;
+    }
+
+    .linhaVertical {
+        width: 200px;
+        height: 1px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .subtitulo {
+        margin-bottom: 1.2rem;
+    }
+    
+    .subtitulo h2 {
+        font-size: 1.2rem;
+    }
+    
+    .subtitulo p {
+        font-size: 0.9rem;
     }
 }
 
