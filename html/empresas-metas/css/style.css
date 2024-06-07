@@ -145,6 +145,11 @@ h2 {
     padding: 0.2rem 0.4rem;
 }
 
+.participar:hover{
+    background-color:#315f6f;
+    cursor: pointer;
+}
+
 footer {
     background-color: #d9d9d9;
     padding-bottom: 70px ;

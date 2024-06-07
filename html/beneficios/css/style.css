@@ -95,6 +95,74 @@ nav {
     display: none;
 }
 
+.container {
+    min-height: 700px;
+    margin: 0px 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #495b29;
+}
+
+.pontoAtual{
+    border-radius: 5px;
+    color: white;
+    background-color: #003760;
+    width: 13%;
+    height: auto;
+    padding: 7px;
+}
+
+.empresa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.linha{
+    border: none;
+    height: 1px;
+    background: #495b29;    
+}
+
+.logo {
+    width: 125px;
+}
+
+.metas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.textoMetas {
+    color: #495b29;
+    font-size: 1.5rem;
+}
+.textoPontos{
+    color: #6e7a58;
+    font-size: 1.5rem;
+}
+
+.resgatar {
+    background-color: #5C91A4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.2rem 0.4rem;
+}
+
+.resgatar:hover{
+    background-color:#315f6f;
+    cursor: pointer;
+}
+
 footer {
     background-color: #d9d9d9;
     padding-bottom: 70px ;
@@ -167,6 +235,21 @@ footer h2 {
     }
 }
 
+@media screen and (max-width: 800px) {
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .textoMetas {
+        font-size: 1.15rem;
+    }
+}
+
 @media screen and (max-width: 700px) {
 
     h1 {
@@ -184,4 +267,6 @@ footer h2 {
     #aws {
         width: 40px;
     }
+
+
 }
