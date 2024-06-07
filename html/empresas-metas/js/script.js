@@ -1,4 +1,5 @@
 let menu = document.querySelector('.iconeMenuCelular');
+let participar = document.querySelector('.participar')
 
 menu.addEventListener('click', ()=> {
     let menuCelular = document.querySelector('.menuCelular');
@@ -9,4 +10,8 @@ menu.addEventListener('click', ()=> {
         menuCelular.classList.add('aberto')
         document.querySelector('.icone').src = "../../img/fecharMenu.svg"
     }
+})
+
+participar.addEventListener('click', ()=> {
+    participar.innerHTML = "Vôce está participando"
 })

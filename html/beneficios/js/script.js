@@ -13,5 +13,5 @@ menu.addEventListener('click', ()=> {
 })
 
 resgatar.addEventListener('click', ()=> {
-    alert('Pontos insuficientes.')
+    resgatar.innerHTML = "Resgatado"
 })

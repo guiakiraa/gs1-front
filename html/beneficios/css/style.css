@@ -113,9 +113,9 @@ h2 {
     border-radius: 5px;
     color: white;
     background-color: #003760;
-    width: 13%;
-    height: auto;
     padding: 7px;
+    font-size: 1rem;
+    align-self: flex-start;
 }
 
 .empresa {
@@ -260,8 +260,12 @@ footer h2 {
         width: 90px;
     }
 
-    .textoMetas {
+    .textoMetas, .textoPontos {
         font-size: 1.15rem;
+    }
+
+    .pontoAtual {
+        font-size: 0.9rem;
     }
 }
 
@@ -284,4 +288,18 @@ footer h2 {
     }
 
 
+}
+
+@media screen and (max-width: 624px) {
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .textoMetas, .textoPontos {
+        font-size: 0.9rem;
+    }
+
+    .pontoAtual {
+        font-size: 0.7rem;
+    }
 }
